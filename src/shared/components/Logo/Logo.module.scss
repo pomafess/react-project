@@ -1,0 +1,26 @@
+@import 'src/shared/styles/_base';
+
+.logo {
+  text-align: center;
+  height: 20px;
+  font-weight: bold;
+  color: $primary-text-color;
+  letter-spacing: 0.08em;
+
+  &Link {
+    @include flex();
+    text-decoration: none;
+    position: relative;
+    width: 103px;
+  }
+  &Icon {
+    position: absolute;
+    top: -1PX;
+    right: 0;
+    height: 18px;
+    width: 13px;
+    fill: $primary-bg-color;
+  }
+}
+
+

@@ -1,0 +1,21 @@
+@import "src/shared//styles/base.scss";
+@import "src/shared/styles/style.scss";
+
+.container_title {
+	@include flex;
+	padding-bottom: 30px;
+}
+.title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.21;
+	text-transform: uppercase;
+	color: $primary-text-color;
+	padding-left: 14px;
+	padding-top: 5px;
+}
+@include tablet {
+	.container_title {
+		padding-bottom: 60px;
+	}
+}

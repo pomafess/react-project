@@ -1,0 +1,62 @@
+@import "../../../../shared/styles/base";
+
+.header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  padding: 17px 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  z-index: 900;
+  margin: 0 auto;
+  &Container {
+    @include flex(space-between, center);
+    height: 100%;
+  }
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.rightSide {
+  @include flex();
+}
+.leftSide {
+  @include flex(flex-start, center);
+}
+
+.text {
+  font-weight: 500;
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.04em;
+
+  color: $third-text-color;
+}
+.score {
+  @include flex(flex-start, center);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+
+  color: $primary-text-color;
+
+  &Balance {
+    @include flex(flex-start, center);
+    margin-left: 42px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .userContainer {
+    @include flex(flex-start, center);
+  }
+}
+@media screen and (max-width: 767px) {
+  .userContainer {
+    display: none;
+  }
+}

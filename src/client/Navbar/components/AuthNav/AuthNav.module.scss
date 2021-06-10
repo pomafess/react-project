@@ -1,0 +1,58 @@
+@import "../../../../shared/styles/base";
+
+@media screen and (min-width: 768px) {
+  .link {
+    display: inline-block;
+    height: 19px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    color: $secondary-text-color;
+
+    &:focus {
+      outline: none;
+      color: $primary-text-color;
+    }
+    &:not(:last-child) {
+      border-right: 2px solid $secondary-text-color;
+      padding-right: 15px;
+      margin-right: 15px;
+    }
+    &.active {
+      color: $primary-text-color;
+      .navigation {
+        @include flex(flex-start, center);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .link {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    padding: 14.5px 30px;
+    width: 274px;
+    border-top: 1px solid $third-text-color;
+
+    color: #ffffff;
+  }
+  .active {
+    color: $primary-text-color;
+  }
+  .navigation {
+    margin-top: 80px !important;
+    border-bottom: 1px solid $third-text-color;
+
+    background-color: $primary-bg-color !important;
+  }
+}

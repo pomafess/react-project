@@ -1,0 +1,18 @@
+@import "src/shared/styles/_base";
+@import "../../../../shared/styles/style.scss";
+@import "../../../../shared/styles/common";
+
+.checkboxList {
+  width: 114px;
+  border-radius: 6px;
+  background: #3e7adc;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(22%);
+  @include tablet {
+    transform: translateX(40%);
+  }
+}

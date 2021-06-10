@@ -1,0 +1,40 @@
+@import "src/shared/styles/_base";
+@import "../../../../shared/styles/style.scss";
+@import "../../../../shared/styles/common";
+
+.planningTask {
+  &Wrapper {
+    display: none;
+  }
+  @include tablet {
+    &Btn {
+      background-image: url(../../btn.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      width: 54px;
+      border-color: transparent;
+      padding: 27px 27px;
+    }
+    &Text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.04em;
+      color: #a6abb9;
+      margin-right: 20px;
+    }
+    &Wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+  }
+  @include desktop {
+    &Wrapper {
+      margin-bottom: 0;
+    }
+  }
+}

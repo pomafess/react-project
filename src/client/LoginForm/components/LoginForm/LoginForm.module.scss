@@ -1,0 +1,54 @@
+@import "src/shared/styles/base";
+
+.form {
+  width: 400px;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 40px 0px;
+  margin: 0 auto;
+}
+.buttonContainer {
+  display: flex;
+  margin: 0 auto;
+}
+.button {
+  display: block;
+}
+.button:not(:last-child) {
+  margin-right: 12px;
+}
+.title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  color: #858598;
+  margin-bottom: 20px;
+}
+.input {
+  margin-bottom: 20px;
+}
+.googleBtn {
+  background: #f6f7fb;
+  color: #000000;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  &:hover {
+    background: #f6f7fb;
+  }
+}
+
+@include tablet {
+  .form {
+    background: #ffffff;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 0 auto;
+  }
+}
+.googleLogo {
+  margin-right: 10px;
+  vertical-align: middle;
+}

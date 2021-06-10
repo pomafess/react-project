@@ -1,0 +1,92 @@
+@import "../../shared/styles/base";
+
+.authPageContainer {
+  min-height: 743px;
+}
+
+.containerFoto {
+  display: none;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+@include tablet {
+  .title {
+    margin-bottom: 38px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .containerFoto {
+    display: block;
+    position: relative;
+  }
+
+  .imgContainer {
+    position: absolute;
+    &:nth-child(2) {
+      top: 348px;
+      z-index: 2;
+      display: none;
+    }
+
+    &:nth-child(4) {
+      top: 78px;
+      left: 400px;
+      z-index: 2;
+    }
+    &:nth-child(3) {
+      top: 104px;
+      left: 136px;
+      z-index: 3;
+    }
+    &:nth-child(1) {
+      top: 62px;
+      left: -214px;
+    }
+  }
+}
+@include desktop {
+  .wrapper {
+    @include grid(590px, auto-fill);
+  }
+  .imgContainer {
+    position: absolute;
+    &:nth-child(2) {
+      top: 348px;
+      z-index: 2;
+      display: block;
+    }
+
+    &:nth-child(4) {
+      top: 476px;
+      left: 220px;
+      z-index: 3;
+    }
+    &:nth-child(3) {
+      top: 190px;
+      left: 220px;
+      z-index: 1;
+    }
+    &:nth-child(1) {
+      top: 20px;
+      left: 0px;
+    }
+  }
+  .title {
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  .form {
+    padding: 72px 80px 40px 100px;
+  }
+}

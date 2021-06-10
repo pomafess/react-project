@@ -1,0 +1,6 @@
+@import 'src/shared/styles/base';
+
+.list {
+    @include grid(280px, auto-fit);
+    grid-gap: 20px;
+}

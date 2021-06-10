@@ -1,0 +1,56 @@
+@import "src/shared/styles/base";
+
+.footer {
+
+}
+
+@include mobile {
+  .footerWrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 41px;
+  }
+
+  .text {
+    &::before {
+      display: inline-block;
+      content: "|";
+      color: #e3e2e7;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.footerLogo {
+  margin-left: 4px;
+}
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &Wrapper {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &Text {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.08em;
+    color: $secondary-text-color;
+  }
+}
+
+.text {
+  margin-bottom: 10px;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.08em;
+  color: $secondary-text-color;
+  text-align: center;
+}
